@@ -2,12 +2,12 @@
   "name": "js-media-package",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "repository": "https://github.com/drelocatelli/js-media-package",
   "files": [
     "dist"
   ],
   "private": false,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.2",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "build-tsc": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run build:css-copy",
