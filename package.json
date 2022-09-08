@@ -7,7 +7,7 @@
     "dist"
   ],
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "build-tsc": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run build:css-copy",
