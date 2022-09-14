@@ -23,6 +23,8 @@ requestNotifications(); sendNotification();
 const {videoURL, isStopped, isRecording, startRecording, stopRecording, Stream} = useVideoRecorder();
 startRecording(); stopRecording(); Stream(videoRef.current);
 
+
+// to stream video
  useEffect(() => {
         if(videoRef.current) {
             Stream(videoRef.current);
