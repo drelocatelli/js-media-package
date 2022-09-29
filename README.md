@@ -31,3 +31,10 @@ startRecording(); stopRecording(); Stream(videoRef.current);
         }
     }, [isStopped, isRecording]);
 ```
+
+# Conversion 
+```
+decodeBase64(data: string);
+encodeBase64(data : string)
+blobToBase64(blob: Blob)
+```
