@@ -7,7 +7,7 @@
     "dist"
   ],
   "private": false,
-  "version": "2.0.1",
+  "version": "2.0.4",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "build-tsc": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run build:css-copy",
@@ -22,5 +22,9 @@
     "rollup": "^2.79.0",
     "rollup-plugin-typescript2": "^0.33.0",
     "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.18"
   }
 }
