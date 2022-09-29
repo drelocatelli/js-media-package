@@ -1,3 +1,4 @@
+import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
 import typescript from "rollup-plugin-typescript2";
 import pkg from "./package.json";
 
@@ -19,5 +20,8 @@ export default {
    ],
    plugins: [
       typescript({ objectHashIgnoreUnknownHack: true }),
+      PeerDepsExternalPlugin({
+         includeDependencies: true,
+      })
    ],
 };
