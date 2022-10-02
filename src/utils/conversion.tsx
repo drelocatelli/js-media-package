@@ -11,7 +11,7 @@ function encodeBase64(data : string) {
 }
 
 function decodeBase64(data: string) {
-    return window.btoa(data).toString();
+    return window.atob(data).toString();
 }
 
 export {blobToBase64, encodeBase64, decodeBase64};
