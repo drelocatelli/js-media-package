@@ -7,11 +7,11 @@ function blobToBase64(blob: Blob) {
 }
 
 function encodeBase64(data : string) {
-    return Buffer.from(data).toString('base64');
+    return window.btoa(data).toString();
 }
 
 function decodeBase64(data: string) {
-    return Buffer.from(data, 'base64').toString('ascii');
+    return window.btoa(data).toString();
 }
 
 export {blobToBase64, encodeBase64, decodeBase64};
